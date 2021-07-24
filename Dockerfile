@@ -12,6 +12,6 @@ COPY . .
 
 EXPOSE 3008
 
-HEALTHCHECK --interval=5s --timeout=30s --start-period=5s --retries=3 CMD [ "curl --fail http://localhost:3008/health" ]
+HEALTHCHECK --interval=5s --timeout=30s --start-period=5s --retries=3 CMD [ "curl --fail http://localhost:3001/health" ]
 
 CMD ["node", "src/main.js"]
